@@ -24,3 +24,5 @@ npm-debug.log*
 # Local editor files
 .vscode/
 .DS_Store
+
+.code0/
