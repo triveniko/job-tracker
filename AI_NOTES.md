@@ -47,7 +47,7 @@ A running log of how I used AI tools while building this project, what I checked
   - The approval screen kept closing when opened from the task list. I opened it a different way [say what actually worked] and approved the plan.
 - **How I validated:** Read the plan before approving (scope: only `User.js`; the only allowed command was `node -e "require('./src/models/User')"`). After the code was generated I checked [fill in after you review the diff]: password excluded from queries, hashing only when modified, `await` on bcrypt calls, unique and lowercase email, the model export.
 - **What was wrong / what I changed:** Nothing needed changing. The generated model matched my checklist
-- **What I learned:** [one line in your own words]
+- **What I learned:** Code0 will likely make a new branch for every task. After each task, run the same merge sequence. Or, before you start the next task, make sure you’re on main with git checkout main. Either way, before submission check that main has everything.
 
 <!-- Copy the template below for each new entry -->
 
