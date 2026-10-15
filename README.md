@@ -2,6 +2,10 @@
 
 A full-stack MERN application for tracking job applications. Users register and log in, then manage their own applications through a status pipeline (Wishlist, Applied, Interview, Offer, Rejected), with search, status filtering, and a dashboard of counts per status.
 
+## Screenshot
+
+![App screenshot](docs/screenshot.png)
+
 ## Key Features
 
 - JWT authentication: register, login, and session restore on page refresh
