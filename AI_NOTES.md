@@ -94,7 +94,6 @@ A running log of how I used AI tools while building the Job Application Tracker:
   4. The list endpoint has no pagination or result limit.
 - **How I validated:** I assessed each finding against the code. Finding 1 is real because query-string values are not guaranteed to be strings. Finding 2 depends on the Express version. Finding 3 is a design weakness that a 400 would improve. Finding 4 is true but low priority for a project of this size.
 - **Status of the findings (keep ONE of these two lines and delete the other):**
-  - **Fixed:** I reproduced findings 1 to 3 in Postman, then fixed them with `typeof` checks on `status` and `search`, a null-safe `pickFields`, and a 400 for empty updates and invalid status filters. Pagination is left as a documented limitation.
   - **Not fixed yet:** I reviewed the findings and left them as documented limitations because of the time limit.
 - **What I learned:** Query-string values can be arrays or objects, so they must be type-checked before use.
 
