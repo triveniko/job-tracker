@@ -1,0 +1,1 @@
+export const STATUSES = ['Wishlist', 'Applied', 'Interview', 'Offer', 'Rejected'];
