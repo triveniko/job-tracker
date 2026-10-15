@@ -273,6 +273,208 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "9 Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"company\":\"Google\",\"role\":\"SDE Intern\",\"status\":\"Applied\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/applications",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "10 List",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/applications",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "11 Filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/applications?search=goo",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "goo"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "12 Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"status\":\"Interview\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/applications/6ad0576d13a5fd051d4c3996",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications",
+            "6ad0576d13a5fd051d4c3996"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "13 Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/applications/6ad0576d13a5fd051d4c3996",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications",
+            "6ad0576d13a5fd051d4c3996"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "14 No token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/applications",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "15 Missing company",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"role\":\"Dev\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/applications",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "16 Wrong owner",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"status\":\"Offer\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/applications/6ad05a8113a5fd051d4c3998",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications",
+            "6ad05a8113a5fd051d4c3998"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "17 Stats",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/applications/stats",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "applications",
+            "stats"
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "auth": {
